@@ -1,0 +1,50 @@
+.activity {
+  display: flex;
+  //padding: 50px;
+}
+
+.activity__details {
+  max-width: 600px;
+  margin: 50px 0;
+  flex: 1;
+  h2 {
+    margin: 0;
+    font-size: 5em;
+  }
+}
+
+.activity__number {
+  margin: 50px 0;
+  width: 300px;
+  h1 {
+    margin: 0;
+    font-size: 12em;
+    line-height: 0.5;
+    color: #d0d0d0;
+  }
+}
+
+
+.activity-num-enter {
+  opacity: 0.01;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all .3s ease-in;
+}
+
+.activity-num-enter.activity-num-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activity-num-leave {
+  opacity: 1;
+  position: absolute;
+  transform: translateY(0);
+  transition: all .3s ease-out;
+}
+
+.activity-num-leave.activity-num-leave-active {
+  opacity: 0;
+  transform: translateY(100%);
+}
