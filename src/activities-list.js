@@ -2,7 +2,6 @@ module.exports = {
   activity1: {
     id: 0,
     name: 'Talk',
-    number: '#1',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'Just stop, remove any distractions, talk and listen.',
     quote: {
@@ -15,7 +14,6 @@ module.exports = {
   activity2: {
     id: 1,
     name: 'Watch a movie',
-    number: '#4',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'When you have some time, relax, grab some popcorn and watch a movie.',
     resources: [
@@ -27,9 +25,8 @@ module.exports = {
   activity3: {
     id: 2,
     name: 'Watch a TV Show',
-    number: '#31',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
-    desc: 'A short but suit burst of entertainment.',
+    desc: 'A short but sweet burst of entertainment.',
     quote: {
       desc: 'Sharing media may help maintain a sense of sharing a social world with partners.',
       source: 'http://journals.sagepub.com/doi/abs/10.1177/0265407516660388?journalCode=spra'
@@ -43,7 +40,6 @@ module.exports = {
   activity4: {
     id: 3,
     name: 'Play a video game',
-    number: '#5',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'Build bridges with a pleasant, light-hearted video game.',
     quote: {

@@ -1,6 +1,10 @@
 .activity {
   display: flex;
-  //padding: 50px;
+  padding: 50px;
+  flex-direction: column;
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
 }
 
 .activity__details {
@@ -16,18 +20,26 @@
 .activity__number {
   margin: 50px 0;
   width: 300px;
+  height: 100px;
+  position: relative;
   h1 {
     margin: 0;
     font-size: 12em;
     line-height: 0.5;
     color: #d0d0d0;
+    position: absolute;
+    right: 10px;
+    &::before {
+      content: 'no.';
+      font-style: italic;
+      font-size: 4rem;
+    }
   }
 }
 
 
 .activity-num-enter {
   opacity: 0.01;
-  position: absolute;
   transform: translateY(-100%);
   transition: all .3s ease-in;
 }
@@ -39,7 +51,6 @@
 
 .activity-num-leave {
   opacity: 1;
-  position: absolute;
   transform: translateY(0);
   transition: all .3s ease-out;
 }
