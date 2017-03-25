@@ -1,10 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import './index.css';
+import App from './components/App';
 
+const Root = () => {
+  return (
+  <Router>
+    <div>
+      <Route exact path="/" component={App}/>
+      <Route exact path="/:activityId" component={App}/>
+    </div>
+  </Router>
+  );
+};
 
-ReactDOM.render(
-  <App />,
-  document.querySelector('.root')
-);
+render((<Root/>), document.querySelector('.root'));

@@ -8,6 +8,7 @@ class App extends React.Component {
     super();
       this.state = {
       activities  : activitiesList,
+      currentActivity  : {},
     };
   }
 
@@ -15,21 +16,18 @@ class App extends React.Component {
     this.randomActivity();
   }
 
-  nextActivity = () => {
-    // const nextActivityKey = this.state.currentActivity.id + 1;
-
-    console.log(this.state.currentActivity);
-    // this.setState({
-    //   currentActivity: this.state.activities[nextActivityKey]
-    // });
+  goToActivity = (event) => {
+    console.log('working');
   }
 
   randomActivity = () => {
-    var keys = Object.keys(this.state.activities);
-    var randomKey = keys[Math.floor(Math.random() * keys.length)];
+    const keys = Object.keys(this.state.activities);
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
     this.setState({
       currentActivity: this.state.activities[randomKey]
     });
+    const activityId = this.state.activities[randomKey].id + 1;
+    this.context.router.history.push(`${activityId}`);
   };
 
   render() {
@@ -46,8 +44,12 @@ class App extends React.Component {
 
       </footer>
       </div>
-    );
+    )
   }
+}
+
+App.contextTypes = {
+  router: React.PropTypes.object
 }
 
 export default App;
