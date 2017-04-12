@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+# /build
 
 # styles
 src/**/*.css
