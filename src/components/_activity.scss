@@ -1,9 +1,12 @@
 .activity {
   display: flex;
-  padding: 50px;
+  padding: 0 50px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (min-width: 960px) {
     flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -19,21 +22,27 @@
 
 .activity__number {
   margin: 50px 0;
-  width: 300px;
+  width: 100%;
   height: 100px;
   position: relative;
+  text-align: center;
   h1 {
     margin: 0;
     font-size: 12em;
     line-height: 0.5;
     color: #d0d0d0;
-    position: absolute;
     right: 10px;
     &::before {
       content: 'no.';
       font-style: italic;
       font-size: 4rem;
     }
+    @media (min-width: 960px) {
+      position: absolute;
+    }
+  }
+  @media (min-width: 960px) {
+    width: auto;
   }
 }
 

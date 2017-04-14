@@ -37,7 +37,6 @@ class Activity extends React.Component {
             }
           </ul>
         </div>
-        <div className="activity__image"></div>
       </div>
     )
   }

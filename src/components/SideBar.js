@@ -5,9 +5,9 @@ class SideBar extends React.Component {
     return (
       <aside className="sidebar">
         <div className="sidebar__container">
-          <h1>Third Wheel</h1>
-          <h2>Activities for long distance relationships.</h2>
-          <button onClick={this.props.loadActivity}>Random</button>
+          <button className="button button--secondary button--block" onClick={this.props.randomActivity}>R</button>
+          <button className="button button--secondary button--block" onClick={this.props.upActivity}>+</button>
+          <button className="button button--secondary button--block" onClick={this.props.downActivity}>-</button>
         </div>
       </aside>
     )

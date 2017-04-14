@@ -2,6 +2,7 @@
 @import "./typography";
 @import "./components/app";
 @import "./components/activity";
+@import "./components/header";
 @import "./components/sideBar";
 @import "./components/blockquote";
 
@@ -12,16 +13,35 @@ body {
   background: #f5f5f5;
 }
 
-button {
+.button {
   padding: 8px 15px;
   background: #1f1f1f;
   border: 2px solid #f5f5f5;
   color: white;
   font-size: 1em;
   cursor: pointer;
+  transition: all 0.3s ease;
   &:hover {
     background: #f5f5f5;
     color: #1f1f1f;
+  }
+}
+
+.button--secondary {
+  color: #000;
+  background: none;
+  border: 0;
+  font-size: 1.5em;
+}
+
+.button--block {
+  display: block;
+}
+
+.button--rotate {
+  &:hover {
+    transform: rotate(-5deg);
+    border: 2px solid #1f1f1f;
   }
 }
 
