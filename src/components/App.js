@@ -27,11 +27,15 @@ class App extends React.Component {
 
   randomActivity = () => {
     const keys = Object.keys(this.state.activities);
-    const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    this.setState({
-      currentActivity: this.state.activities[randomKey]
-    });
-    this.context.router.history.push(`${randomKey}`);
+    let randomKey = keys[Math.floor(Math.random() * keys.length)];
+    if (this.state.activities[randomKey] === this.state.currentActivity) {
+      this.randomActivity();
+    } else {
+      this.setState({
+        currentActivity: this.state.activities[randomKey]
+      });
+      this.context.router.history.push(`${randomKey}`);
+    }
   };
 
   upActivity = () => {
