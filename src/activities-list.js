@@ -1,6 +1,6 @@
 module.exports = {
   activity1: {
-    id: 0,
+    id: 1,
     name: 'Talk',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'Just stop, remove any distractions, talk and listen.',
@@ -12,7 +12,7 @@ module.exports = {
     ]
   },
   activity2: {
-    id: 1,
+    id: 2,
     name: 'Watch a movie',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'When you have some time, relax, grab some popcorn and watch a movie.',
@@ -23,7 +23,7 @@ module.exports = {
     ]
   },
   activity3: {
-    id: 2,
+    id: 3,
     name: 'Watch a TV Show',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'A short but sweet burst of entertainment.',
@@ -38,7 +38,7 @@ module.exports = {
     ]
   },
   activity4: {
-    id: 3,
+    id: 4,
     name: 'Play a video game',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
     desc: 'Build bridges with a pleasant, light-hearted video game.',

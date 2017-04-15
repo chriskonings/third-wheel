@@ -14,43 +14,32 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.randomActivity();
+    this.initActivity(this.props.match.params.activityId - 1);
   }
 
-  goToActivity = (event) => {
-    console.log('working');
-  }
 
-  randomActivity = () => {
+  initActivity = (activityId) => {
+    const keys = Object.keys(this.state.activities);
+    const activityKey = keys[activityId];
+    this.setState({
+      currentActivity: this.state.activities[activityKey]
+    });
+    /*
     const keys = Object.keys(this.state.activities);
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    this.setState({
-      currentActivity: this.state.activities[randomKey]
-    });
-    const activityId = this.state.activities[randomKey].id + 1;
-    this.context.router.history.push(`${activityId}`);
-  };
-
-  upActivity = () => {
-    console.log(this);
-    const keys = Object.keys(this.state.activities);
-    const nextKey = keys[this.state.currentActivity.id + 1];
-    if (nextKey) {
+    const urlKey = keys[this.context.router.route.match.params.activityId];
+    if (urlKey) {
       this.setState({
-        currentActivity: this.state.activities[nextKey]
+        currentActivity: this.state.activities[urlKey]
+      });
+    } else if (!urlKey){
+      const activityId = this.state.activities[randomKey].id + 1;
+      this.context.router.history.push(`${activityId}`);
+      this.setState({
+        currentActivity: this.state.activities[randomKey]
       });
     }
-  };
-
-  downActivity = () => {
-    console.log('hello');
-    const keys = Object.keys(this.state.activities);
-    const prevKey = keys[this.state.currentActivity.id - 1];
-    if (prevKey) {
-      this.setState({
-        currentActivity: this.state.activities[prevKey]
-      });
-    }
+    */
   };
 
   render() {

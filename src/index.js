@@ -7,10 +7,9 @@ import App from './components/App';
 
 const Root = () => {
   return (
-  <Router basename="/third-wheel/build/">
+  <Router basename="/third-wheel/">
     <div>
-      <Route exact path="/" component={App}/>
-      <Route exact path="/:activityId" component={App}/>
+      <Route exact path={`/:activityId`} component={App}/>
     </div>
   </Router>
   );

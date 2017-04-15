@@ -14,7 +14,7 @@ class Activity extends React.Component {
           component="div"
           className="activity__number"
           >
-          <h1 key={this.props.activity.id}>{this.props.activity.id + 1}</h1>
+          <h1 key={this.props.activity.id}>{this.props.activity.id}</h1>
         </ReactCSSTransitionGroup>
         <div className="activity__details">
           <h2>{this.props.activity.name}</h2>

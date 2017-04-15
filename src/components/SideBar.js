@@ -5,7 +5,7 @@ class SideBar extends React.Component {
     return (
       <aside className="sidebar">
         <div className="sidebar__container">
-          <button className="button button--secondary button--block" onClick={this.props.randomActivity}>R</button>
+          <button className="button button--secondary button--block" onClick={this.props.randomActivity}>~</button>
           <button className="button button--secondary button--block" onClick={this.props.upActivity}>+</button>
           <button className="button button--secondary button--block" onClick={this.props.downActivity}>-</button>
         </div>
