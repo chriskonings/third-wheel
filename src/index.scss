@@ -32,6 +32,10 @@ body {
   background: none;
   border: 0;
   font-size: 1.5em;
+  &:hover {
+    background: transparent;
+    color: #d0d0d0;
+  }
 }
 
 .button--block {
@@ -60,6 +64,4 @@ a {
 
 .main {
   flex: 1;
-  height: 100vh;
-  overflow: scroll;
 }

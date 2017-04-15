@@ -35,19 +35,24 @@ class App extends React.Component {
   };
 
   upActivity = () => {
+    const keys = Object.keys(this.state.activities);
     const nextKey = this.state.currentActivity.id + 1;
-    this.setState({
-      currentActivity: this.state.activities[nextKey]
-    });
-    this.context.router.history.push(`${nextKey}`);
+    if (this.state.currentActivity.id < keys.length) {
+      this.setState({
+        currentActivity: this.state.activities[nextKey]
+      });
+      this.context.router.history.push(`${nextKey}`);
+    }
   };
 
   downActivity = () => {
     const prevKey = this.state.currentActivity.id - 1;
-    this.setState({
-      currentActivity: this.state.activities[prevKey]
-    });
-    this.context.router.history.push(`${prevKey}`);
+    if (this.state.currentActivity.id > 1) {
+      this.setState({
+        currentActivity: this.state.activities[prevKey]
+      });
+      this.context.router.history.push(`${prevKey}`);
+    }
   };
 
   render() {
