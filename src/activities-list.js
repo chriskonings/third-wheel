@@ -1,5 +1,5 @@
 module.exports = {
-  activity1: {
+  1: {
     id: 1,
     name: 'Talk',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
@@ -11,7 +11,7 @@ module.exports = {
       {name: '15 Conversation Starters That Dont Suck', desc: 'A huffington post article on some good conversation starters.', link: 'http://www.huffingtonpost.com/chris-colin/conversation-starters_b_5227200.html'},
     ]
   },
-  activity2: {
+  2: {
     id: 2,
     name: 'Watch a movie',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
@@ -22,7 +22,7 @@ module.exports = {
       {name: 'Lets Gaze', desc: 'Use LetsGaze to watch YouTube videos together or choose a video from your local machine', link: 'http://letsgaze.com'},
     ]
   },
-  activity3: {
+  3: {
     id: 3,
     name: 'Watch a TV Show',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',
@@ -37,7 +37,7 @@ module.exports = {
       {name: 'Lets Gaze', desc: 'Use LetsGaze to watch YouTube videos together or choose a video from your local machine', link: 'http://letsgaze.com'},
     ]
   },
-  activity4: {
+  4: {
     id: 4,
     name: 'Play a video game',
     icon: 'https://cdn3.iconfinder.com/data/icons/glypho-movie-and-video/64/film-camera-alt-512.png',

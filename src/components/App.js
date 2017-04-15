@@ -17,29 +17,37 @@ class App extends React.Component {
     this.initActivity(this.props.match.params.activityId - 1);
   }
 
-
   initActivity = (activityId) => {
     const keys = Object.keys(this.state.activities);
     const activityKey = keys[activityId];
     this.setState({
       currentActivity: this.state.activities[activityKey]
     });
-    /*
+  };
+
+  randomActivity = () => {
     const keys = Object.keys(this.state.activities);
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    const urlKey = keys[this.context.router.route.match.params.activityId];
-    if (urlKey) {
-      this.setState({
-        currentActivity: this.state.activities[urlKey]
-      });
-    } else if (!urlKey){
-      const activityId = this.state.activities[randomKey].id + 1;
-      this.context.router.history.push(`${activityId}`);
-      this.setState({
-        currentActivity: this.state.activities[randomKey]
-      });
-    }
-    */
+    this.setState({
+      currentActivity: this.state.activities[randomKey]
+    });
+    this.context.router.history.push(`${randomKey}`);
+  };
+
+  upActivity = () => {
+    const nextKey = this.state.currentActivity.id + 1;
+    this.setState({
+      currentActivity: this.state.activities[nextKey]
+    });
+    this.context.router.history.push(`${nextKey}`);
+  };
+
+  downActivity = () => {
+    const prevKey = this.state.currentActivity.id - 1;
+    this.setState({
+      currentActivity: this.state.activities[prevKey]
+    });
+    this.context.router.history.push(`${prevKey}`);
   };
 
   render() {
