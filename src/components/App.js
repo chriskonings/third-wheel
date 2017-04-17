@@ -14,6 +14,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
+    console.log('hello');
     this.initActivity(this.props.match.params.activityId - 1);
   }
 

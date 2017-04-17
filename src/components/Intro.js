@@ -44,26 +44,30 @@ class Intro extends React.Component {
         <div className="activity">
           <div className="activity__details">
             <h2>Welcome</h2>
-            <h3>Third Wheel is for couples looking for a long-distance-friendly activity.</h3>
-            <button className="button" onClick={() => this.randomActivity()}>Random</button>
+            <h3>Activities for long-distance couples.</h3>
             <h3>How to use</h3>
-            <ul>
+            <ol>
               <li>
                 <p>
-                  Find an activity
+                  <button className="button" onClick={() => this.randomActivity()}>Random</button>
                 </p>
               </li>
               <li>
                 <p>
-                  Check out the resources
+                  Find an acitivty for you
                 </p>
               </li>
               <li>
                 <p>
-                  Execute
+                  Check out the resources for help with the activity
                 </p>
               </li>
-            </ul>
+              <li>
+                <p>
+                  Have fun!
+                </p>
+              </li>
+            </ol>
           </div>
         </div>
       </main>
