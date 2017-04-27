@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import activitiesList from '../activities-list';
+import logo from '../img/logo.svg';
+
 
 class Intro extends React.Component {
   constructor() {
@@ -43,6 +45,7 @@ class Intro extends React.Component {
         <Header></Header>
         <div className="activity">
           <div className="activity__details">
+            <img className="logo" src={logo} alt="logo"/>
             <h2>Welcome</h2>
             <h3>Activities for long-distance couples.</h3>
             <h3>How to use</h3>
