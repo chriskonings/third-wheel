@@ -57,7 +57,7 @@ class Intro extends React.Component {
               </li>
               <li>
                 <p>
-                  Find an acitivty for you
+                  Find an activity for you
                 </p>
               </li>
               <li>

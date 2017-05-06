@@ -9,7 +9,7 @@ import App from './components/App';
 
 const Root = () => {
   return (
-  <Router>
+  <Router >
     <div>
       <Switch>
         <Route exact path={`/:activityId`} component={App}/>
