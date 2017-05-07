@@ -17,5 +17,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Do
 
-- [] Add routing web history
-- [] Add redux to tidy up states
+- [ ] Add routing web history
+- [ ] Add redux to tidy up states
