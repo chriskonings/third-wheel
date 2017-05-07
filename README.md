@@ -14,3 +14,8 @@ A concept for a boilerplate list platform, edit the JSON to move through the lis
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+## To Do
+
+- [] Add routing web history
+- [] Add redux to tidy up states
